@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="icon.css">
 </head>
 <body>
+    <style>
+        #spinner-container {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        
+        #static-logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #rotating-logo {
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 15px;
+            left: 28px;
+            width: 42%;
+            height: 42%;
+        }
+        
+        @keyframes spin {
+            0% {
+            transform: scale (1, 1);
+            }
+            20% {
+            transform: scale(0.9, 1.1);
+            }
+            40% {
+            transform: scale(1.2, 0.8);
+            }
+            60% {
+            transform: scale(0.95, 1.05);
+            }
+            61% {
+            transform: rotate(180deg);
+            }
+        
+            100% { 
+            transform: rotate(0deg); 
+            }
+        
+        }
+    </style>
     <div align="center">
         <div id="spinner-container">
             <img id="static-logo" src="icons/kvikna_spinner_black.png" alt="Static Logo"/>
