@@ -11,6 +11,7 @@
         }
         
         #static-logo {
+            animation: spinBlack 1s linear;
             position: absolute;
             top: 0;
             left: 0;
@@ -19,15 +20,15 @@
         }
         
         #rotating-logo {
-            animation: spin 1s linear infinite;
+            animation: spinRed 1s linear infinite;
             position: absolute;
-            top: 15px;
+            top: 13.5px;
             left: 28px;
-            width: 42%;
-            height: 42%;
+            width: 46%;
+            height: 46%;
         }
-        
-        @keyframes spin {
+ 
+        @keyframes spinRed {
             0% {
             transform: scale (1, 1);
             }
@@ -46,6 +47,22 @@
         
             100% { 
             transform: rotate(0deg); 
+            }
+        
+        }        
+
+        @keyframes spinBlack {
+            0% {
+            transform: scale (1, 1);
+            }
+            20% {
+            transform: scale(0.9, 1.1);
+            }
+            40% {
+            transform: scale(1.2, 0.8);
+            }
+            60% {
+            transform: scale(0.95, 1.05);
             }
         
         }
