@@ -35,11 +35,11 @@
       transform: scale(0.95, 1.05);
     }
     61% {
-      transform: rotate(0deg);
+      transform: rotate(180deg);
     }
   
     100% { 
-      transform: rotate(180deg); 
+      transform: rotate(0deg); 
     }
   
   }
