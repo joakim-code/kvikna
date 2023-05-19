@@ -18,6 +18,15 @@
             width: 100%;
             height: 100%;
         }
+
+        #static-logo-white {
+            animation: slideWhite 0.5s linear;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
         
         #rotating-logo {
             animation: spinRed 1s linear infinite;
@@ -28,6 +37,11 @@
             height: 46%;
         }
  
+        @keyframes slideWhite {
+            from{top:-300px;opacity:0} 
+            to{top:0;opacity:1}
+        }     
+
         @keyframes spinRed {
             0% {
             transform: scale (1, 1);
@@ -70,6 +84,7 @@
     <div align="center">
         <div id="spinner-container">
             <img id="static-logo" src="icons_v1/kvikna_spinner_black.png" alt="Static Logo"/>
+            <img id="static-logo-white" src="icons_v1/kvikna_spinner_white.png" alt="Static Logo White"/>
             <img id="rotating-logo" src="icons_v1/kvikna_spinner_red.png" alt="Rotating Logo"/>
         </div>
     </div>
